@@ -1,15 +1,172 @@
-.partie_gauche {
-    margin-left: 450px;
+* {
+    font-family: 'Roboto Slab', serif;
 }
-hr {
-    width: 350px;
+body {
+    background-color: #f2f2f2;
+}
+.partie_gauche {
+    margin-left: 420px;
+}
+h3 {
+    color: #58afd1;
+    font-weight: normal;
+}
+h4 {
+    font-style: italic;
+    font-weight: normal;
+}
+.titre {
+    height: 1px;
+    width: 60px;
+    background-color: #58afd1;
+    margin-left: auto;
+    margin-right: auto;
 }
 .partie_droite {
     margin-right: 250px;
 }
-span.a {
+span.centre {
+    display: inline-block;
+}
+span.sasa {
     display: inline-block;
 }
 img {
     border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.separation {
+    height: 10px;
+    width: 600px;
+    background-color: #e6e6e6;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Bouton */
+
+.draw-border {
+    box-shadow: inset 0 0 0 1px #58afd1;
+    color: #58afd1;
+    transition: color 0.20s 0.08333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+  }
+  .draw-border::after {
+    border-top-width: 1px;
+    border-right-width: 1px;
+  }
+  .draw-border:hover {
+    color: #ff93ff;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #ff93ff;
+    transition: border-color 0s, width 0.20s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.20s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.20s, 0s;
+  }
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 100 0.9rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    margin-top: 100px;
+    margin-left: 43%;
+    margin-top: 90px;
+  }
+  .btn:focus {
+    outline: 2px dotted #55d7dc;
+  }
+  .btn:active:before {
+      background-color: #ffe6ff;
+}
+
+
+
+
+/* Full-width input fields */
+input[type=text],input[type=email], textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #e6e6e6;	
+    margin: 5% auto 15%; /* 5% from the top, 15% from the bottom and centered */
+    width: 35%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
 }

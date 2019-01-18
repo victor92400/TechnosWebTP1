@@ -8,24 +8,26 @@
 </head>
 <body>
     <main class="main">
-        <div>
             <center>
-            <span class="a">
-                <h1>Victor Bensimon</h1>
-                <h3>Web developer</h3>
+            <span class="centre">
+                <h1 style="font-weight: normal">Victor Bensimon</h1>
+                <div class="titre"></div>
+                <h3 style="color: black">IoT Engineer</h3>
             </span>
-            <span class="a"><img src="photo_cv.png" width="150" height="150"></span>
+            <span class="sasa">
+                <img src="photo_cv.png" width="150" height="150">
+            </span>
             </center>
-        </div>
-            <hr>
     </main>
+    <div class="separation"></div>
+    <br>
 
     <section style="float: left" class="partie_gauche">
         <h3>Contact</h3>
-        <li>Telephone</li>
-        <li>Adresse</li>
-        <li>Email</li>
-        <li>Linkedin</li>
+        <li>06 95 14 06 85</li>
+        <li>14 Avenue Gallieni Courbevoie, 92400</li>
+        <li><a href="mailto:victor.bensimon@edu.ece.fr">victor.bensimon@edu.ece.fr</a></li>
+        <li><a href="https://www.linkedin.com/in/victor-bensimon-56ab95124">Linkedin: Victor Bensimon</a></li>
         <br>
         <h3>Education</h3>
         <h4>ECE Paris</h4>
@@ -56,4 +58,30 @@
             Quibusdam quo illo omnis, aliquid esse temporibus excepturi modi.
         </p>
     </section>
+    <br>
+    <button class="btn draw-border" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Me</button>
+    
+    <div id="id01" class="modal">			  
+            <form class="modal-content animate" method="post" action="http://localhost:8888/mail.php">
+
+              <div class="container">
+                    <center><input type="text" placeholder="Nom" required></center>
+                    <center><input type="email" placeholder="Email Address" required></center>
+                    <center><textarea placeholder="Commentaire" required></textarea></center>
+                    <br>
+                     <center><input type="submit" value="Send"></center>
+              </div>
+          </form>
+    </div>
+    <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 </body>
