@@ -1,5 +1,7 @@
 # TechnosWebTP1
-
+Nom: Bensimon
+Prénom: Victor
+TD: 02 OCRES
 ## Instructions
 
 Créer un site CV **présentable** qui pourra être mis en ligne par vos soins

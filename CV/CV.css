@@ -1,0 +1,15 @@
+.partie_gauche {
+    margin-left: 450px;
+}
+hr {
+    width: 350px;
+}
+.partie_droite {
+    margin-right: 250px;
+}
+span.a {
+    display: inline-block;
+}
+img {
+    border-radius: 50%;
+}
