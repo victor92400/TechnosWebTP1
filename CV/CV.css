@@ -5,7 +5,12 @@ body {
     background-color: #f2f2f2;
 }
 .partie_gauche {
-    margin-left: 420px;
+    margin-left: 25%;
+    width: 25%;
+}
+.partie_droite {
+    margin-right: 16%;
+    width: 34%;
 }
 h3 {
     color: #58afd1;
@@ -17,18 +22,15 @@ h4 {
 }
 .titre {
     height: 1px;
-    width: 60px;
+    width: 10%;
     background-color: #58afd1;
     margin-left: auto;
     margin-right: auto;
 }
-.partie_droite {
-    margin-right: 250px;
-}
 span.centre {
     display: inline-block;
 }
-span.sasa {
+span.photo {
     display: inline-block;
 }
 img {
@@ -38,7 +40,7 @@ img {
 }
 .separation {
     height: 10px;
-    width: 600px;
+    width: 50%;
     background-color: #e6e6e6;
     margin-left: auto;
     margin-right: auto;
@@ -47,6 +49,10 @@ a{
     color: black;
     text-decoration: none;
 }
+.informations {
+    line-height: 1.5;
+}
+
 
 
 /* Bouton */
@@ -99,19 +105,21 @@ a{
     font: 100 0.9rem 'Roboto Slab', sans-serif;
     padding: 1em 2em;
     letter-spacing: 0.05rem;
-    margin-top: 100px;
     margin-left: 43%;
-    margin-top: 90px;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
   .btn:focus {
     outline: 2px dotted #55d7dc;
   }
-  .btn:active:before {
-      background-color: #ffe6ff;
+.button_video {
+    border: none;
+    cursor: pointer;
+    background-color: lightgrey;
 }
-
-
-
+.button_video:hover{
+    color: #58afd1;
+}
 
 /* Full-width input fields */
 input[type=text],input[type=email], textarea {
