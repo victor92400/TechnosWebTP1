@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <title>Document</title>
+    <title>CV Victor Bensimon</title>
     <link rel="stylesheet" href="CV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main class="main">
-            <center>
+    <main class="main">            
             <span class="centre">
                 <h1 style="font-weight: normal">Victor Bensimon</h1>
                 <div class="titre"></div>
-                <h3 style="color: black">IoT Engineer</h3>
+                <h3 style="color: black">&emsp;&emsp;&emsp;IoT Engineer</h3>
             </span>
             <span class="photo">
                 <img src="photo_cv.png" width="150" height="150">
             </span>
-            </center>
     </main>
     <div class="separation"></div>
     <br>
 
     <section style="float: left" class="partie_gauche">
         <h3>Contact</h3>
-        <li class="informations">+33 6 95 14 06 85</li>
-        <li class="informations"><a href="mailto:victor.bensimon@edu.ece.fr">victor.bensimon@edu.ece.fr</a></li>
-        <li class="informations">14 Avenue Gallieni<br> &emsp;Courbevoie, 92400</li>
-        <li class="informations"><a href="https://www.linkedin.com/in/victor-bensimon-56ab95124">Linkedin: Victor Bensimon</a></li>
+            <li style="list-style: none" class="informations"> &nbsp;+33 6 95 14 06 85</li>
+            <li style="list-style: none" class="informations"><a style="color: black" href="mailto:victor.bensimon@edu.ece.fr">&nbsp; victor.bensimon@edu.ece.fr</a></li>
+            <li style="list-style: none" class="informations">&nbsp; 14 Avenue Gallieni<br> &emsp;Courbevoie, 92400</li>
         <h3>Scolarité</h3>
         <h4>ECE PARIS</h4>
         <p>
@@ -40,7 +38,7 @@
         </p>
         <h3>Centres d'intérêts</h3>
         <p>
-            - Pratiquant de sport (boxe,musculation,ski,tennis...)
+            - Passionné de sport (boxe,musculation,ski,tennis...)
         </p>
         <p>- Lecture de livres entrepreneuriaux et visionnage<br>
             &nbsp; de <button class="button_video" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">vidéos</button> sur le sujet
@@ -50,7 +48,8 @@
     <section style="float: right" class="partie_droite">
         <h3>Profil</h3>
         <p>
-            Étudiant en seconde année du cycle ingénieur à l’ECE Paris (BAC + 4).<br>
+            Étudiant en seconde année du cycle ingénieur à <br>
+            l’ECE Paris (BAC + 4).<br>
             Majeure OCRES (Objets Connectés Réseaux et Services).<br>
             Passionné de sport et d’entrepreneuriat, sérieux et ambitieux.
         </p>
@@ -79,19 +78,24 @@
     </section>
     <br>
     <footer>
-            <button class="btn draw-border" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Me</button>
+            <button class="btn draw-border" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Me</button> <br>
+            <nav class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100010688642031" class="social-icon"> <i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/h_derri" class="social-icon"> <i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/victor-bensimon-56ab95124" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+            </nav>
     </footer>
     
     
     <div id="id01" class="modal">			  
-            <form class="modal-content animate" method="post" action="http://localhost:8888/mail.php">
+            <form class="modal-content animate" method="post">
 
               <div class="container">
                     <center><input type="text" placeholder="Nom" required></center>
-                    <center><input type="email" placeholder="Email Address" required></center>
+                    <center><input type="email" placeholder="Adresse mail" required></center>
                     <center><textarea placeholder="Commentaire" required></textarea></center>
                     <br>
-                     <center><input type="submit" value="Send"></center>
+                     <center><input type="submit" value="Envoyer"></center>
               </div>
           </form>
     </div>
